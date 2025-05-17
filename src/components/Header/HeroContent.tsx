@@ -67,6 +67,8 @@ const HeroContent: React.FC = () => {
           View Projects
         </a>
       </div>
+
+     
     </div>
   );
 };

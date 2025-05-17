@@ -51,17 +51,7 @@ const Footer: React.FC = () => {
                 {getIconComponent(link.icon)}
               </a>
             ))}
-            <div>
-              <a
-              href="https://wa.me/+923409899794?text=Hello Momi"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2  bg-gray-800  hover:bg-gray-700  rounded-full px-3 py-2 transition-colors duration-300"
-              aria-label="WhatsApp Chat"
-              >
-              <i className="ri-whatsapp-line text-xl text-gray-300 hover:text-white"></i>
-              </a>
-            </div>
+          
           </div>
         </div>
 

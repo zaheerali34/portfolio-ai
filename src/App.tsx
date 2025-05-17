@@ -4,6 +4,7 @@ import Projects from './components/Projects';
 import UpcomingProjects from './components/UpcomingProjects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Fixed from './/components/Header/Fixed';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <Fixed />
     </div>
   );
 }
