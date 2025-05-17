@@ -1,17 +1,17 @@
-import React from 'react';
-import { socialLinks } from '../../data/profile';
-import { Github as GitHub, Linkedin, Twitter, Mail } from 'lucide-react';
+import React from "react";
+import { socialLinks } from "../../data/profile";
+import { Github as GitHub, Linkedin, Twitter, Mail } from "lucide-react";
 
 const Footer: React.FC = () => {
   const getIconComponent = (iconName: string) => {
     switch (iconName) {
-      case 'github':
+      case "github":
         return <GitHub className="h-5 w-5" />;
-      case 'linkedin':
+      case "linkedin":
         return <Linkedin className="h-5 w-5" />;
-      case 'twitter':
+      case "twitter":
         return <Twitter className="h-5 w-5" />;
-      case 'mail':
+      case "mail":
         return <Mail className="h-5 w-5" />;
       default:
         return <div className="h-5 w-5" />;
@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
   };
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -28,14 +28,17 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h2 className="text-2xl font-bold flex items-center">
-              Momi<span className="text-blue-400">
+              Momi
+              <span className="text-blue-400">
                 <img src="/logo.png" alt="logo" className="w-12" />
               </span>
             </h2>
-            <p className="text-gray-400 mt-2">Transforming healthcare with innovative AI solutions</p>
+            <p className="text-gray-400 mt-2">
+              Transforming healthcare with innovative AI solutions
+            </p>
           </div>
-          
-          <div className="flex space-x-4">
+
+          <div className="flex items-center space-x-4">
             {socialLinks.map((link) => (
               <a
                 key={link.name}
@@ -48,28 +51,45 @@ const Footer: React.FC = () => {
                 {getIconComponent(link.icon)}
               </a>
             ))}
+            <div>
+              <a
+              href="https://wa.me/+923409899794?text=Hello Momi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2  bg-gray-800  hover:bg-gray-700  rounded-full px-3 py-2 transition-colors duration-300"
+              aria-label="WhatsApp Chat"
+              >
+              <i className="ri-whatsapp-line text-xl text-gray-300 hover:text-white"></i>
+              </a>
+            </div>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Momi AI Engineer. All rights reserved.
+            &copy; {new Date().getFullYear()} Momi AI Engineer. All rights
+            reserved.
           </p>
-          
+
           <div className="flex items-center space-x-6">
-            <button 
+            <button
               onClick={scrollToTop}
               className="text-gray-400 hover:text-white transition-colors duration-300 text-sm flex items-center"
             >
               Back to top
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                className="h-4 w-4 ml-1" 
-                fill="none" 
-                viewBox="0 0 24 24" 
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 ml-1"
+                fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 15l7-7 7 7"
+                />
               </svg>
             </button>
           </div>

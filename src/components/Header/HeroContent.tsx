@@ -22,9 +22,9 @@ const HeroContent: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-24 text-center">
       <div className="mb-8 relative inline-block">
-        <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-xl mx-auto">
+        <div className="w-50 h-48 md:w-56 md:h-56 max-sm:w-56 max-sm:h-56 rounded-full overflow-hidden border-4 border-white shadow-xl mx-auto">
           <img 
-            src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+            src="image.jpg" 
             alt="Momi AI Engineer" 
             className="w-full h-full object-cover"
           />
